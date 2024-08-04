@@ -1,0 +1,271 @@
+body {
+    border: 0;
+    margin: 0;
+    background-color: #0e0e0e;
+    color: #9ba3b4;
+    font-family: -apple-system,system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow-x:hidden;
+}
+
+
+a {
+    font-size: 15px;
+    font-weight: 500;
+    color: #4daafc;
+}
+a:hover {
+    color: #8fc3fe;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 15px;
+}
+
+.topBar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 30px;
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07)
+}
+
+.list #vscode {
+    font-weight: 500;
+    color: #fff;
+}
+
+.list a {
+    text-decoration: none;
+    color: #9ba3b4;
+    font-weight: 500;
+    padding-left: 15px;
+}
+
+.list a:hover {
+    color: #ccc;
+}
+
+
+.search input {
+    background-color: #0e0e0e;
+    border: 0.5px solid #9ba3b4;
+    height: 27px;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin: 0 15px;
+}
+
+.button {
+    border: none;
+    background-color: #0078d4;
+    color: #fff;
+    font: inherit;
+    font-weight: 500;
+    padding: 5px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #0069b9;
+}
+
+.section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.banner {
+    margin: 20px 0;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.opensource {
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 32px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 30px;
+    padding: 8px 12px;
+    width: 70%;
+    min-height: 10px;
+}
+
+#license {
+    font-size: 11px;
+    font-weight: 400;
+}
+
+
+.cnt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 30px;
+}
+
+.c1 {
+    width: 35%;
+    padding-right: 20px;
+    text-align: left;
+}
+.c1 h1{
+    color: #e9eaeb;
+    text-align: left;
+    font-size: 48px;
+    letter-spacing: -0.4px;
+    font-weight: 600;
+
+}
+
+.c1 span p {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.c2 {
+    margin-top: 20px;
+}
+
+#dwForWin {
+    height: 50px;
+    font-size: 15;
+    font-weight: 600;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.feature-grid {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.feature-grid .card {
+    height: 300px;
+    width: 22%;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 24px;
+    background-color: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.feature-grid .card img {
+    height: 40px;
+}
+
+.c3{
+    width: auto;
+    text-align: center;
+}
+.c3 h1, .c3 span {
+    text-align: center;
+}
+
+.feature-grid .card:hover {
+    background-color: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.15);
+}
+
+.icons {
+    position: relative;
+    display: flex;
+    width: 90%;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.social a img{
+    max-width: 24px;
+    padding: 15px;
+}
+
+.icons .ms {
+    position: absolute;
+    right: 70px;
+    top: 40px;
+}
+
+.support {
+    width: 90%;
+}
+
+.support a{
+    color: #9ba3b4;
+    padding-right: 20px;
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+    .topbar {
+        height: 50px;
+        padding: 40px;
+    }
+    .cnt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .c1 {
+        width: 80%;
+    }
+    .pm-c1 {
+        text-align: center;
+    }
+    .pm-c1 h1 {
+        text-align: center;
+    }
+    .opensource {
+        position: relative;
+        left: 30px;
+    }
+    .c2 img {
+        width: 350px;
+    }
+
+    .feature-grid .card {
+        width: 30%;
+    }   
+}
+
+@media screen and (max-width: 650px) {
+    .feature-grid .card {
+        width: 45%;
+    } 
+}
+
+@media screen and (max-width: 450px) {
+    .feature-grid .card {
+        width: 90%;
+    } 
+}
