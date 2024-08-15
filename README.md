@@ -1,1 +1,1 @@
-Live Link : [https://sujeethvarma27.github.io/VsCode_LandingPageClone/]
+Live Link : https://sujeeth-varma.github.io/VsCode_LandingPageClone/
